@@ -32,7 +32,7 @@ public class boardController {
 	{
 		ModelAndView mv = new ModelAndView();
 		mv = bs.getBoardList(page, mv);
-		System.out.println(" hello github");
+		System.out.println(" hello github i am jihyeon");
 
 		return mv;
 	}
