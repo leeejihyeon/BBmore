@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTO config 3.0//EN" "http://mybatis.org/dtb/mybatis-3-config.dtd">
+
+<!-- dto 별칭 -->
+<configuration>
+ 	<typeAliases>
+ 		<typeAlias type="com.icia.bbmore.dto.User" alias="user"/>
+ 		<typeAlias type="com.icia.bbmore.dto.Goods" alias="goods"/>
+ 		<typeAlias type="com.icia.bbmore.dto.ChatMedium" alias="chatM"/>
+ 		<typeAlias type="com.icia.bbmore.dto.ChatSmall" alias="chatS"/>
+ 		<typeAlias type="com.icia.bbmore.dto.ChatXsmall" alias="chatXs"/>
+ 		<typeAlias type="com.icia.bbmore.dto.Board" alias="board"/>
+ 		<typeAlias type="com.icia.bbmore.dto.Comment" alias="comment"/>
+ 		<typeAlias type="com.icia.bbmore.dto.OrderList" alias="orderlist"/>
+ 		<typeAlias type="com.icia.bbmore.dto.OrderGoods" alias="ordergoods"/>
+ 	</typeAliases>
+</configuration>

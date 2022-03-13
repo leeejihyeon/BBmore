@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* swal css */
+.swal-button {
+	background-color: #E5CCFF !important;
+}
+
+button:focus {
+	background-color: #7d5794 !important;
+}
+	
+.midle-section {
+    height: 418px;
+}
+
+.success-msg .block i {
+    background: #7d5794 !important;
+}
+
+.btn-main:hover, .btn-solid-border:hover, .btn-transparent:hover, .btn-small:hover {
+    background: #7d5794 !important;
+}
+
+.btn-main, .btn-solid-border, .btn-transparent, .btn-small {
+    background: darkgray !important;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+
+/* 확인버튼 */
+.button-28 {
+    appearance: none;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 398%;
+    will-change: transform;
+    position: relative;
+    top: 33px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #7d5794 !important;
+    border: none;
+    box-shadow: rgb(0 0 0 / 25%) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* password input */
+.input-pwd {
+    border: 2px solid lightgray;
+    width: 470px;
+}
+
+.input-pwd:hover {
+    border: 2px solid darkgray;
+}
+
+
+/* MYPAGE */
+.widget .widget-title {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* input~다음버튼*/
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="password"] {
+    border-radius: 0;
+    box-shadow: none;
+    height: 58px;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    position: relative;
+    top: 16px;
+}

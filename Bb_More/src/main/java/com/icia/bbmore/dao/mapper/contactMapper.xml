@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="contactMapper">
+	<!-- 첫 번째 질문 클릭  - ajax  -->
+	<select id="chatLargeProc" resultType="chatM">
+		select * from chatlarge l, chatmedium m where l.chat_lno = m.chat_lno and l.chat_lno = #{chat_lno}
+	</select>
+	
+	
+	<!-- 두 번째 질문 클릭시 - ajax  -->
+	<select id="chatMediumProc" resultType="chatS">
+		select * from chatmedium m, chatsmall s where m.chat_mno = s.chat_mno and m.chat_mno = #{chat_mno}
+	</select>
+	
+	
+	<!-- 세 번째 질문 클릭시 - ajax  -->
+	<select id="chatSmallProc" resultType="chatXs">
+		select * from chatsmall s, chatxsmall xs where s.chat_sno = xs.chat_sno and chat_xsno = #{chat_xsno}
+	</select>
+</mapper>

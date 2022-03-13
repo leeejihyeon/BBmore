@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.button-48 {
+  appearance: none;
+  background-color: lightgray;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #7d5794;
+  clip-path: polygon(2% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+ 
+.button-48:hover {
+    color: white;
+}
+	
+td {
+    font-size: 1.56rem;
+}
+
+.title1 {
+	display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 28px;
+}
+
+.title1-text {
+    position: relative;
+    left: 24px;
+    top: -8px;
+    font-size: 2.5rem;
+}
+
+.info-inner {
+	position: relative;
+	top: 24px;
+}
+
+.title2 {
+	display: flex;
+    justify-content: center;
+    position: relative;
+    top: 23px;
+    height: 87px;
+    width: 24%;
+    position: relative;
+    left: 295px;
+}
+
+.page-wrapper {
+    padding: 59px;
+}
+
+.section-pay {
+	padding: 0;
+}
+
+#payment-button {
+	position: relative;
+    left: 306px;
+    top: 26px;
+    width: 66%;
+    font-size: 2.3rem;
+    padding: 21px;
+}
+
+.pay {
+    height: 174px;
+}
+
+.title2-text {
+    position: relative;
+    left: 17px;
+    top: -17px;
+}
+
+h3 {
+	color: #7d5794;
+}

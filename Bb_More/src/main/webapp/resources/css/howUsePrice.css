@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.title1 {
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+
+.title2 {
+    display: flex;
+}
+
+.fa-check-double {
+    position: relative;
+    left: 17px;
+    top: 26px;
+}
+
+.post-title {
+    position: relative;
+    left: 14px;
+}

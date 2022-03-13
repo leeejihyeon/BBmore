@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="orderMapper">
+
+	<!-- 수거날짜 선택 후 다음버튼 클릭시 -->
+	<update id="freeServiceProc">
+		update user set u_pickupDate = #{u_pickupDate} , u_pickupTime = #{u_pickupTime} where u_id = #{u_id}
+	</update>
+	
+	
+	<!-- 배송날짜 User테이블에  update 하기 -->
+	<update id="deliveryServiceProc">
+		UPDATE		user 
+		SET 		u_deliveryDate = #{u_deliveryDate} , u_deliveryTime = #{u_deliveryTime} 
+		WHERE 		u_id = #{u_id}
+	</update>
+	
+	<!-- 무료견적 서비스 페이지에서 카테고리별 라디오 버튼  클릭시 -->
+	<select id="chooseClothesProc" resultType="goods">
+		select c.c_no, g_name, g_price, g_no from goods g, category c where c.c_no = g.c_no and c.c_no = #{c_no}
+	</select>
+	
+	
+	<!-- 굿즈 정보 가져오기 -->
+	<select id="getGoods" resultType="goods">
+		select * from goods where g_no = #{g_no} <!-- g_no = #{g_no} : #뒤에는 dto로 던질경우 dto에 저장되어있는 변수명을 쓰고, 단일로 던질경우에는 받은 변수명으로 쓴다. -->
+	</select>
+	
+	
+	
+	<!-- 선택한 상품 orderList 테이블에 저장하기 -->
+	<insert id="successProc" useGeneratedKeys="true" keyProperty="orderList_no">			
+			INSERT INTO orderlist
+			(
+				u_no, ordergoods_totCount, ordergoods_totPrice
+			)
+			VALUES
+			(
+				#{u_no}, #{ordergoods_totCount}, #{ordergoods_totPrice}
+			)
+	</insert>
+	
+	
+	
+	<!-- orderList에 다시 저장하기 -->
+	<insert id="insertOderGoods">
+		INSERT INTO	ordergoods
+		(
+			orderList_no, g_no, g_name, g_price
+		)
+		VALUES
+		(
+			#{orderList_no}, #{g_no}, #{g_name}, #{g_price}
+		)
+	</insert>
+	
+	
+	<!-- orderList에 저장 후 orderList_no를 select해오기 -->
+	<select id="selectList" resultType="long">
+		SELECT		orderList_no
+		FROM		orderlist
+		WHERE 		u_no = #{u_no}
+		ORDER BY	orderList_no DESC LIMIT 1
+	</select>
+	
+</mapper>

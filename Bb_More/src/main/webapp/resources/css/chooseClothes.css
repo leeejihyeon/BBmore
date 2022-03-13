@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* 	.list > li { */
+/* 		list-style: none; */
+/* 	    display: flex; */
+/* 	    justify-content: center; */
+/* 	} */
+	
+/* 	.li-style { */
+/* 		    display: display: block; */
+/*    			width: 8%; */
+/* 	} */
+	
+	.text-list {
+		box-shadow: rgb(60 64 67 / 7%) 0px 2px 5px 1px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+	    border-radius: 20px;
+	    width: 33%;
+	    text-align: left;
+	    background-color: ghostwhite;
+	    padding: 20px;
+/* 	    height: 286px; */
+	}
+	
+	.
+	
+	.li-style2 {
+		display: inline-block;
+		padding-left: 2%;
+    }
+    
+    .border-style1, .border-style2, .border-style3 {
+    	display: inline-block;
+    }
+    
+    .border-style1 {
+    	width: 8%;
+    }
+
+	.border-style2 {
+		width: 13%;
+	}
+	
+	.border-style3 {
+		width: 3%;
+	}
+	
+	.check {
+	    display: flex;
+	    justify-content: center;
+	    position: relative;
+	    top: -59px;
+	    left: -70px;
+	}
+
+	.date-icon {
+		color: #7d5794;
+	}
+	
+	.button-34 {
+	  	background: #7d5794;
+	    border-radius: 999px;
+	    box-shadow: #5e5df0 0 10px 20px -10px;
+	    box-sizing: border-box;
+	    color: #FFFFFF;
+	    cursor: pointer;
+	    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+	    font-size: 1.7rem;
+	    font-weight: 700;
+	    line-height: 30px;
+	    opacity: 1;
+	    outline: 0 solid transparent;
+	    padding: 8px 18px;
+	    user-select: none;
+	    -webkit-user-select: none;
+	    touch-action: manipulation;
+	    word-break: break-word;
+	    border: 0;
+	    width: 33%;
+	    position: relative;
+	    top: 105px;
+	}
+	
+	.check1 , .check2 {
+		position: relative;
+	    left: 34%;
+	    top: -44px;
+	}
+	
+	.list-inner {
+		display: inline-block;
+	}
+	
+	.button-79 {
+	  	backface-visibility: hidden;
+	    background: #7d5794;
+	    border: 0;
+	    border-radius: 0.375rem;
+	    box-sizing: border-box;
+	    color: #fff;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-family: Circular,Helvetica,sans-serif;
+	    font-size: 1.6rem;
+	    font-weight: 700;
+	    letter-spacing: -.01em;
+	    line-height: 1.3;
+	    padding: 1rem 1.25rem;
+	    position: relative;
+	    text-align: center;
+	    text-decoration: none;
+	    transform: translateZ(0) scale(1);
+	    transition: transform .2s;
+	    user-select: none;
+	    -webkit-user-select: none;
+	    touch-action: manipulation;
+	    width: 103px;
+	    height: 66px;
+	    margin: 5px;
+	}
+	
+	.button-79:disabled {
+	  color: #787878;
+	  cursor: auto;
+	}
+	
+	.button-79:not(:disabled):hover {
+	  transform: scale(1.05);
+	}
+	
+	.button-79:not(:disabled):hover:active {
+	  transform: scale(1.05) translateY(.125rem);
+	}
+	
+	.button-79:focus {
+	  outline: 0 solid transparent;
+	}
+	
+	.button-79:focus:before {
+	  border-width: .125rem;
+	  content: "";
+	  left: calc(-1*.375rem);
+	  pointer-events: none;
+	  position: absolute;
+	  top: calc(-1*.375rem);
+	  transition: border-radius;
+	  user-select: none;
+	}
+	
+	.button-79:focus:not(:focus-visible) {
+	  outline: 0 solid transparent;
+	}
+	
+	.button-79:not(:disabled):active {
+	  transform: translateY(.125rem);
+	}
+
+
+   .category input[type="radio"] {
+       display: none;
+   }
+
+	.category-text {
+		position: relative;
+    	top: 15px;
+	}
+	
+	.btn-daum {
+		height: 149px;
+	}
+	/* 카테고리 클릭하기 전 */
+/*    .category input[type="radio"] + span { */
+/*       backface-visibility: hidden; */
+/* 	  background-color: #7d5794; */
+/* 	  border: 0; */
+/* 	  border-radius: .375rem; */
+/* 	  box-sizing: border-box; */
+/* 	  color: #fff; */
+/* 	  cursor: pointer; */
+/* 	  display: inline-block; */
+/* 	  font-family: Circular,Helvetica,sans-serif; */
+/* 	  font-size: 1.125rem; */
+/* 	  font-weight: 700; */
+/* 	  letter-spacing: -.01em; */
+/* 	  line-height: 1.3; */
+/* 	  padding: 1rem 1.25rem; */
+/* 	  position: relative; */
+/* 	 text-align: center; */
+/* 	  text-decoration: none; */
+/* 	  transform: translateZ(0) scale(1); */
+/* 	  transition: transform .2s; */
+/* 	  user-select: none; */
+/* 	  -webkit-user-select: none; */
+/* 	  touch-action: manipulation; */
+
+/*    } */
+
+/* 	.category input[type="radio"]:focus:not(:focus-visible) { */
+/* 		outline: 0 solid transparent; */
+/* 	} */
+	
+/* 	.category input[type="radio"]:not(:disabled):active { */
+/* 	  transform: translateY(.125rem); */
+/* 	} */
+	
+	/* 카테고리 클릭했을 때 */
+   .category input[type="radio"]:checked + span {
+       background-color: #7d5794;
+       color: #ffffff;
+   }
+   
+   .check-request {
+   		position: relative;
+    	top: 21px;
+    	left: -197px;
+   }
+   
+   .textarea-inner {
+   		width: 33%;
+	    border: solid 2px lightgray;
+	    border-radius: 12px;
+	    resize: none;
+	    box-sizing: border-box;
+	    font-size: 16px;
+	    position: relative;
+    	top: 80px;
+    	height: 174px;
+   }
+   
+	#gname {
+		font-size: 1.5rem;
+		line-height: 29px;
+	}
+	
+	.goods { 
+		display: inline-block;
+    	width: 454px;
+	}
+	
+	.g_price {
+		width: 63px;
+	}
+
+	.h-text {
+    position: relative;
+    left: 20px;
+}

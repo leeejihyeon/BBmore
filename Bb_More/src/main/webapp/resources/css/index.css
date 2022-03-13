@@ -1,0 +1,207 @@
+@charset "UTF-8";
+	body {
+		margin:0; padding:0;
+		position: absolute;
+		width: 99vw; 
+	}
+	
+	.head {
+		height: 77px;
+	}
+	
+	.border-bottom {
+	 border-bottom: 1px solid white !important;
+	}
+	
+	.btn-log {
+		border: 1px solid lightgray;
+	    color: #7d5794!important;
+	    background-color: white;
+	}
+	
+	.btn-log:hover {
+		border: 1px solid lightgray;
+		background-color: white;
+	}	
+	
+	a:hover {
+		cursor: pointer;
+	}
+	
+	
+	/* 모달 */
+   .modal {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: 1; /* Sit on top */
+       left: 0;
+       top: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   }
+
+   /* 모달 Content/Box */
+   .modal-content {
+       background-color: #fefefe;
+       margin: 15% auto; /* 15% from the top and centered */
+       padding: 20px;
+       border: 1px solid #888;
+       width: 50%; /* Could be more or less, depending on screen size */                          
+   }
+   /* 모달 The Close Button */
+   .close {
+       color: #aaa;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+   }
+   .close:hover,
+   .close:focus {
+       color: black;
+       text-decoration: none;
+       cursor: pointer;
+   }
+   
+   /* 챗봇 버튼 */
+	.button-17 {
+	  align-items: center;
+	  appearance: none;
+	  background-color: #fff;
+	  border-radius: 24px;
+	  border-style: none;
+	  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+	  box-sizing: border-box;
+	  color: #3c4043;
+	  cursor: pointer;
+	  display: inline-flex;
+	  fill: currentcolor;
+	  font-family: "Google Sans",Roboto,Arial,sans-serif;
+	  font-size: 14px;
+	  font-weight: 500;
+	  height: 48px;
+	  justify-content: center;
+	  letter-spacing: .25px;
+	  line-height: normal;
+	  max-width: 100%;
+	  overflow: visible;
+	  padding: 2px 24px;
+	  position: relative;
+	  text-align: center;
+	  text-transform: none;
+	  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	  width: auto;
+	  will-change: transform,opacity;
+	  z-index: 0;
+	  height: 58px;
+      margin: 18px;
+	}
+	
+	.button-17:hover {
+	  background: #F6F9FE;
+	  color: #174ea6;
+	}
+	
+	.button-17:active {
+	  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+	  outline: none;
+	}
+	
+	.button-17:focus {
+	  outline: none;
+	  border: 2px solid lightgray;
+	}
+	
+	.button-17:not(:disabled) {
+	  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+	}
+	
+	.button-17:not(:disabled):hover {
+	  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+	}
+	
+	.button-17:not(:disabled):focus {
+	  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+	}
+	
+	.button-17:not(:disabled):active {
+	  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+	}
+	
+	.button-17:disabled {
+	  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+	}
+	
+	.btn-chat {
+		display:inline-block;
+	}
+	
+	.chat_m {
+		background-color: lightgray;
+	}
+	
+	.chatbot_p {
+		color: gray !important;
+		text-align: center;
+	}
+	
+	.chat_s {
+    	background-color: lightsteelblue;
+	    display: list-item;
+	    width: 96%;
+	}
+	
+	.chat_p {
+	  align-items: center;
+	  appearance: none;
+	  background-color: #fff;
+	  border-radius: 24px;
+	  border-style: none;
+	  box-shadow: rgb(0 0 0 / 0%) 0 3px 5px -1px, rgb(0 0 0 / 0%) 0 6px 10px 0, rgb(0 0 0 / 11%) 0 1px 18px 0;
+	  box-sizing: border-box;
+	  color: #3c4043;
+	  cursor: pointer;
+	  display: inline-flex;
+	  fill: currentcolor;
+	  font-family: "Google Sans",Roboto,Arial,sans-serif;
+	  font-size: 14px;
+	  font-weight: 500;
+	  height: 48px;
+	  justify-content: center;
+	  letter-spacing: .25px;
+	  line-height: 38px;
+	  max-width: 100%;
+	  overflow: visible;
+	  padding: 2px 24px;
+	  position: relative;
+	  text-align: center;
+	  text-transform: none;
+	  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	  width: 97%;
+	  will-change: transform,opacity;
+	  z-index: 0;
+	  height: 337px;
+      margin: 18px;
+	}
+	
+	.font {
+		color: #7d5794;
+	}
+	
+	.title-faq {
+    display: flex;
+}
+	
+	.fa-solid {
+    position: relative;
+    left: 9px;
+    top: 11px;
+}

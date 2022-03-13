@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="myPageMapper">
+
+		<!-- 마이페이지 - 비밀번호 입력시 -->
+		<select id="passwordCheck" resultType="user">
+			SELECT		*
+			FROM		user
+			WHERE		u_id = #{u_id}
+			AND			u_pwd = #{u_pwd}
+		</select>
+		
+		
+ 		<!-- 휴대폰 번호 변경시 업데이트 처리 --> 
+		<update id="changePhonePrco">
+			UPDATE		user
+			SET			u_phone = #{u_phone}
+			WHERE		u_no = #{u_no}
+		</update>
+		
+		
+		<!-- 주소 변경시 업데이트 처리 -->
+		<update id="changeAddressPrco">
+			UPDATE		user
+			SET			u_address = #{u_address}, u_address_sub = #{u_address_sub}
+			WHERE		u_no = #{u_no}
+		</update>
+		
+		
+		<!-- 화면 로딩 후 버튼안에 결제 날짜 select 후 뿌리기 -->
+		<select id="selectOrderDT" resultType="orderlist">
+			SELECT		*
+			FROM		orderlist
+			WHERE		u_no = #{u_no}
+		</select>
+		
+		
+		<!-- 회원탈퇴 버튼 클릭시 회원정보 삭제 -->
+		<delete id="deleteUserProc">
+			DELETE	
+			FROM		user
+			WHERE		u_no = #{u_no}
+		</delete>
+		
+		
+		<!-- orderList 전체 select해오기 -->
+		<select id="getOrderList" resultType="orderlist">
+			SELECT		orderList_no, u_no, ordergoods_totCount, ordergoods_totPrice, DATE_FORMAT(order_regDt, '%Y년%c월%d일') AS order_regDt
+			FROM		orderlist
+			WHERE		u_no = #{u_no}
+		</select>
+		
+		
+		
+		<!-- 상세내역 버튼 클릭시 주문 상새내역 select해오기 -->
+		<select id="getOrderGoods" resultType="ordergoods">
+			SELECT		*
+			FROM		ordergoods
+			WHERE		orderList_no = #{orderList_no}
+		</select>
+</mapper>

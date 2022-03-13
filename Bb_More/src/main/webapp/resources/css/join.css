@@ -1,0 +1,164 @@
+@charset "UTF-8";
+	* {
+		margin:0; padding:0;
+		overflow-x: hidden;
+    	overflow-y: hidden;
+	}
+	
+	.bbTitle {
+		color: black;
+	}
+	
+	.findForm {
+		width:100vw;
+		height: 100vh;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	ul li {
+		list-style-type: none;
+		display: inline;
+		padding: 5px;
+	}
+	
+	a {
+		text-decoration:none;
+		color: gray;
+	}
+	
+	#btnCheck {
+		width: 94%;
+	    border: 1px solid #7d5794;
+	    background-color: #7d5794;
+	    color: #fff;
+	    line-height: 2rem;
+	    padding: 0.5rem 0.75rem;
+	    margin: 0.3rem;
+	    font-size: 1.1rem;
+	    font-family: 'Nanum Gothic', sans-serif;
+	    position: relative;
+	    top: 4px;
+	}
+	
+	.findForm-inner {
+		width: 800px;
+	    height: 786px;
+	    border: 2px solid #e5e5e5;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    position: relative;
+	    top: -46px;
+	}
+	
+	.form {
+	    width: 702px;
+	    height: 599px;
+	    position: relative;
+	    top: -41px;
+	    left: 14px;
+	}
+	
+	.form-style {
+		background-color: #f6f6f6;
+    	border: 1px solid #e8e8e8;	
+    	font-size: 1rem;
+	    padding: 7px;
+	    margin: 4px;
+	    width: 74%;
+	    line-height: 24px;	
+	    font-family: 'Nanum Gothic', sans-serif;	
+	}
+	
+	.headline {
+		font-size: 2.2rem;
+		margin-bottom: 4rem;
+    	padding-left: 0.2rem;
+    	font-family: 'Nanum Gothic', sans-serif;
+    	position: relative;
+    	top: -7px;
+	}
+	
+	.text-style {
+		width: 113px;
+    	display: inline-block;
+	}
+	
+	input:focus {
+		outline: 1px solid darkgray;
+	}
+	
+	select:focus {
+		outline: 1px solid darkgray;
+	}
+	
+	.swal-button {
+		background-color: #E5CCFF !important;
+	}
+	
+	button:focus {
+		background-color: #7d5794 !important;
+	}
+
+	li+li::before {
+		background-color: gray;
+	}
+	
+	.title {
+		font-family: 'Black Han Sans', sans-serif;
+		font-size: 4rem;
+		display: flex;
+    	justify-content: center;
+   	    position: relative;
+    	top: 12px;
+	}
+	
+	.title2 {
+		color: #7d5794 !important
+		
+	}
+	
+	.addr {
+		width: 61% !important;
+	}
+	
+	.btnAddr, .btnIdCheck {
+		border: 1px solid #CEAFD5;
+    	background-color: #CEAFD5;
+    	color: #fff;
+    	padding: 0.5rem 0.75rem;
+    	margin: 0.3rem;
+    	font-family: 'Nanum Gothic', sans-serif;
+    	position: relative;
+    	left: -1px;
+    	height: 43px;
+    	border-radius: 9px;
+    	font-size: 0.9rem;
+	}
+	
+	.select-style {
+		border: 1px solid #e8e8e8;
+	    width: 540px;
+	    height: 47px;
+	    background-color: #f6f6f6;
+	    position: relative;
+	    left: 4px;
+	    font-size: 1rem;
+	}
+	
+	.textarea {
+		height: 70px;
+	}
+	
+	.list-join {
+		margin: 0;
+	    position: relative;
+	    top: -16px;
+	}
+	
+	.id-style {
+		width: 61% !important;
+	}
